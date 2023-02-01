@@ -7,12 +7,12 @@ import Landingpage from "./pages/Landingpage";
 import SelectBus from "./pages/SelectBus";
 import { useEffect } from "react";
 import { createContext } from "react";
-import MainPage from "./Admin/MainPage"
-//import NavPage from "./Admin/NavPage";
-//import Customers from "./Admin/Customers";
-//import Bookings from "./Admin/Bookings";
-//import Drivers from "./Admin/Drivers";
-//import Buses from "./Admin/Buses";
+// import MainPage from "./Admin/MainPage";
+// import NavPage from "./Admin/NavPage";
+// import Customers from "./Admin/Customers";
+// import Bookings from "./Admin/Bookings";
+// import Drivers from "./Admin/Drivers";
+// import Buses from "./Admin/Buses";
 import Driverdash from './Driver/Driverdash';
 import AddBus from "./Driver/AddBus";
 
@@ -44,7 +44,7 @@ function App() {
           <Route path="login" element={<Login onLogin={onLogin} />} />
           <Route path="/buses/:id" element={<SelectBus />} />
           <Route path="home" element={<Homepage />} />
-          <Route path="/mainPage/*" element={<MainPage/>}/>
+          {/* <Route path="/mainPage/*" element={<MainPage/>}/> */}
           <Route path="/driverDashboard" element={<Driverdash />} />
           <Route path="/addbus" element={<AddBus />} />
         </Routes>
