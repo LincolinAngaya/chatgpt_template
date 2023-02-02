@@ -40,12 +40,13 @@ function App() {
     <UserContext.Provider value={currentUser}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Landingpage onLogin={onLogin}/>} />
+        <Route path="/" element={<Driverdash />} />
+          <Route path="/driverDashboard" element={<Landingpage onLogin={onLogin}/>} />
           <Route path="login" element={<Login onLogin={onLogin} />} />
           <Route path="/buses/:id" element={<SelectBus />} />
           <Route path="home" element={<Homepage />} />
           {/* <Route path="/mainPage/*" element={<MainPage/>}/> */}
-          <Route path="/driverDashboard" element={<Driverdash />} />
+          
           <Route path="/addbus" element={<AddBus />} />
         </Routes>
       </BrowserRouter>
